@@ -19,7 +19,6 @@ result = str(response.read(), 'utf-8')
 print(result)
 
 
-'''
 # post
 
 url = 'https://shuju.wdzj.com/depth-data.html'
@@ -30,4 +29,3 @@ response = urllib.request.urlopen(url, data)
 result = response.read()
 for key in json.loads(result).keys():
 	print(key)
-'''
