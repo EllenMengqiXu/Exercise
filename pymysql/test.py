@@ -1,20 +1,22 @@
 
 import pymysql
 import pymysql.cursors
+import pandas as pd
+import codecs
 
-db = pymysql.connect(host='localhost', user='root', passwd='root', db='douban', port=8080, charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
+db = pymysql.connect(host='127.0.0.1', user='root', passwd='root', db='douban', port=3306, charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
 cursor = db.cursor()
 
-fr=open('DoubanTop250_^.csv', 'r')
+fr=open('testdouban.csv', 'r', encoding = 'utf8')
 
-count=0
+count = 0
 for line in fr:
-	count+=1
+	count += 1
 	print(count)
 	if count == 1:
 		continue
 	line = line.strip().split('^')
-	cursor.execute("insert into movie(title, rating, director, runtime, Released Date, Released Country, Genre, quote, url, counts) values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)", [line[1], line[2], line[3], line[4], line[5], line[6], line[7], line[8], line[9], line[10]])
+	cursor.execute("insert into movie(rank, title, rating, director) values(%s, %s, %s, %s)", [line[0], line[1], line[2], line[3]])
 
 fr.close()
 
