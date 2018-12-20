@@ -1,4 +1,4 @@
-# PythonPrograms
+# SmallPrograms
 
 ## @EllenMengqiXu
 
