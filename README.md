@@ -9,5 +9,6 @@
 1). pip install pymysql
 2). MAMP/WAMP --> phpmyadmin to create database
 
-* to be continued...
+
+to be continued...
 
