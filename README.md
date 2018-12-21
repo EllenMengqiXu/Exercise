@@ -6,8 +6,16 @@
 2. alice.py shows how to count words frequency of txt file and print out csv file. 
 3. pymysql hows how to use python to CURD mysql. 
 * prerequsite:
-1). pip install pymysql
-2). MAMP/WAMP --> phpmyadmin to create database
+
+ - pip install pymysql
+
+ - MAMP/WAMP
+
+* steps:
+
+ - phpmyadmin to create database
+
+ - write code in sublime refererence
 
 
 to be continued...
