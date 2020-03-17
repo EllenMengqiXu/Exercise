@@ -8,7 +8,7 @@ localtime = time.time()
 print (localtime)
 
 import datetime
-# It will print out the date format of current time. #time that is human friendly
+# It will print out the date format of current time. #time that is human friendly #:)
 
 lt=datetime.datetime.fromtimestamp(localtime).strftime('%Y-%m-%d %H:%M:%S')
 print(lt)
