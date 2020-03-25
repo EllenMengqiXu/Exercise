@@ -4,8 +4,10 @@ import pandas as pd
 import codecs
 
 #establish connection
-#add 'use_unicode=True' to read Chinese 
+#add 'use_unicode=True' to read Chinese
 db = pymysql.connect(host='127.0.0.1', user='root', passwd='root', db='douban', port=3306, charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor, use_unicode=True)
+
+
 cursor = db.cursor()
 
 

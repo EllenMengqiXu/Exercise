@@ -1,0 +1,42 @@
+difference between tuple and list:
+
+1) we use [] to include elements in a list while () for tuple.
+
+2) tuple is not mutable while list is mutable.
+
+Set:
+{}
+unordered, no duplicates
+
+unordered means every time you executed, it turns out different ordered_elements set.
+
+usercase:
+
+to check membership
+go to 'list_tuple_set.py' for details
+print('Math' in set1)
+
+how to create empty list, tuple and set?
+
+list
+
+empty_list = []
+empty_list = list()
+
+tuple
+
+empty_tuple = ()
+empty_tuple = tuple()
+
+set
+
+empty_set = set()
+
+dict
+
+empty_dict = {} ##this is dictionary, not SET!!!
+
+
+x =['a', 'b', 'c', 'd']
+y =[5,10,15,30]
+
