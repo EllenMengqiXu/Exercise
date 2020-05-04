@@ -4,7 +4,7 @@ once you clone repo in your local machine, then
 ```
 git checkout  #make sure you are in master
 
-git branch 'bname' #create branch
+git branch bname #create branch
 
 git checkout bname #go to branch
 ```
