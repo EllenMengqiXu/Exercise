@@ -16,7 +16,7 @@ git diff #optional, to see the difference with previous file
 
 git add . (or git add -A) # both means add new changes
 
-git commit m 'comment what you did'
+git commit -m 'comment what you did'
 
 git push
 ```
